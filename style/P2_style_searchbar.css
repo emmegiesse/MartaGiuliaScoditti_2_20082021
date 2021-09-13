@@ -1,0 +1,71 @@
+/* Mise en page de la barre de recherche */
+
+.Search
+{
+    margin-bottom: 30px;
+}
+
+.Search h2
+{
+    margin-bottom: 10px;
+}
+
+.Search p
+{
+    margin-top: 10px;
+}
+
+.SearchBar
+{
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.LocationBox
+{
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.LocationBox i
+{
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.SearchInput
+{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px;
+}
+
+.SearchInput::placeholder
+{
+    color: #c2c2c2;
+}
+
+.SearchButton
+{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.SearchButton i
+{
+    display: none;
+}
+
+

@@ -1,0 +1,155 @@
+/* Mise en page du bloc des hébergements et bloc des populaires */
+
+.Hotels, .Populars
+{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* Mise en page du bloc des hébérgements */
+
+.Hotels
+{
+    flex: 2;
+}
+
+.Hotels > h2
+{
+    margin: 0;
+}
+
+.HotelsTab
+{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
+}
+
+.HotelPic
+{
+    display: grid;
+    height: 220px;
+    grid-template-rows: 1fr 40%;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+
+.HotelPic img
+{
+    width: 100%;
+    height: 126px;
+    object-fit: cover;
+}
+
+.HotelDetails
+{
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.HotelDetails p
+{
+    margin: 0;
+}
+
+.HotelRating
+{
+    word-spacing: -1ch;
+}
+
+.fa-star
+{
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.blueStar
+{
+    color: #0065FC;
+}
+
+.greyStar
+{
+    color: #f2f2f2;
+}
+
+.ShowMore
+{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* Mise en forme le plus populaires */
+
+.Populars
+{
+    flex: 1;
+    margin-left: 3%;
+}
+
+.PopularsIcon
+{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.PopularsIcon h2
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.PopularsIcon i
+{
+    font-size: 1.5rem;
+}
+
+.PopularPic
+{
+    height: 145px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.PopularPic img
+{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.PopularDetails
+{
+    flex: 1;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.HotelName
+{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.PopularDetails .HotelName + p
+{
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+

@@ -1,0 +1,76 @@
+/* Mise en forme de la barre des filtres */
+
+.FiltersBarTitle
+{
+    align-self: center;
+}
+
+.Filters
+{
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.Filter
+{
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.Filter span
+{
+    padding-left: 12px;
+}
+
+.Filter:hover
+{
+    cursor: pointer;
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+.FiltersBar
+{
+    flex-wrap: wrap;
+}
+
+.FilterIcon
+{
+    position: relative;
+    right: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.FilterIcon i
+{
+    margin: auto;
+    color: #0065FC;
+}
+
+/* Mise en forme de la ligne info */
+
+.InfoIcon
+{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+
+.InfoIcon i
+{
+    margin: auto;
+    font-size: .9rem;
+    color: #0065FC;  
+}

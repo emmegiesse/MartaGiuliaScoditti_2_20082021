@@ -1,0 +1,85 @@
+/* Mise en page du bloc des activités */
+
+.ActivitiesTab
+{
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+    gap: 37.5px;
+    height: 450px;
+    grid-auto-flow: column;
+}
+
+.row12
+{
+    grid-row-end: span 13;
+}
+
+.row6
+{
+    grid-row-end: span 7;
+}
+
+.row5
+{
+    grid-row-end: span 6;
+}
+
+.row12 .ActivityPic
+{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+
+.row12 .ActivityPic img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.row6 .ActivityPic
+{
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+
+.row6 .ActivityPic img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 80%;
+}
+
+.row5 .ActivityPic
+{
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+
+.row5 .ActivityPic img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 80%;
+}
+
+.ActivityName
+{
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
