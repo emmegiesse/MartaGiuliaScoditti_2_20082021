@@ -29,7 +29,8 @@
 @media screen and (max-device-width: 1024px)
 {
 
-   
+    /* Filtres pour tablette */
+    
     .Filters
     {
         flex-direction: column;
@@ -46,7 +47,7 @@
         margin: 0 1rem 1rem 0;
     }
 
-   
+   /* Le plus populaires pour tablette */
 
     .Populars
     {
@@ -73,7 +74,7 @@
         font-size: 1rem;
     }
 
-   
+   /* Hébergements pour tablette */
     
     .Hotels
     {
@@ -85,7 +86,7 @@
         flex-direction: column;
     }
 
-    
+    /* Activités pour tablette */
     
     .ActivitiesTab
     {
@@ -108,7 +109,7 @@
         font-size: 1.1rem;
     }
 
-    
+    /* Pied de page pour tablette */
 
     footer div
     {
