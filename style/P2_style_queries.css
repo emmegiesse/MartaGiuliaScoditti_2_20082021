@@ -28,8 +28,15 @@
 /* Version Tablette */
 @media screen and (max-device-width: 1024px)
 {
-
-    /* Filtres pour tablette */
+    
+/* En-tete pour tablette */
+    
+    .Logo img
+    {
+        width: 160px;
+    }
+    
+/* Barre des filtres pour tablette */
     
     .Filters
     {
@@ -47,7 +54,7 @@
         margin: 0 1rem 1rem 0;
     }
 
-   /* Le plus populaires pour tablette */
+/* Hébergements le plus populaires pour tablette */ 
 
     .Populars
     {
@@ -73,8 +80,13 @@
     {
         font-size: 1rem;
     }
+    
+     .PopularsIcon i
+    {
+        font-size: 1.9rem;
+    }
 
-   /* Hébergements pour tablette */
+/* Hébergements pour tablette  */
     
     .Hotels
     {
@@ -85,37 +97,69 @@
     {
         flex-direction: column;
     }
-
-    /* Activités pour tablette */
     
-    .ActivitiesTab
+    .HotelPic
     {
-        height: auto;
+        height: 350px;
+    }
+    
+    .HotelPic img
+    {
+        height: 200px;
     }
 
-    .ActivityPic
+    .HotelName 
     {
-        height: 190px;
+        font-size: 1.4rem !important;
+    }
+
+    .HotelDetails 
+    {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .HotelDetails p
+    {
+        font-size: 1.3rem !important;
+    }
+
+    .fa-star
+    {
+        font-size: 1.4rem !important;
+        letter-spacing: 1px;
+    }
+
+/* Activités pour tablette */
+   
+    .ActivitiesTab
+    {
+        gap: 20px;
     }
 
     .row12, .row5, .row6
     {
-        grid-row-end: span 4;
-        grid-column-end: span 2;
+        grid-row-end: span 0.5;
+        grid-column-end: span 0.5;
+    }
+
+    .row12
+    {
+        width: 190px;
     }
 
     .ActivityName
     {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
-    /* Pied de page pour tablette */
+/* Pied de page pour tablette */ 
 
     footer div
     {
         padding: 10px;
     }
 }
+ 
 
 /* Version Mobile */
 @media screen and (max-device-width: 600px)
@@ -130,10 +174,10 @@
 
     h2
     {
-        font-size: 1.4rem;
+        font-size: 3.5rem;
     }
 
-    /* En-tete pour mobile */
+/* En-tete pour mobile */
 
     header
     {
@@ -143,11 +187,17 @@
 
     .Logo
     {
-        margin-left: 20px;
+        margin-left: 40px;
+    }
+    
+    .Logo img
+    {
+        width: 250px;
     }
 
     .SignUp
     {
+        font-size: 2.1rem;
         align-self: flex-end;
         padding: 0;
         margin-right: 20px;
@@ -167,6 +217,7 @@
 
     nav li
     {
+        font-size: 2.1rem;
         width: 50%;
         text-align: center;
         padding: 20px 0;
@@ -190,6 +241,11 @@
 
 /* Barre de recherche pour mobile */
 
+    .Search p
+    {
+        margin-top: 50px;
+    }
+
     .Search
     {
         margin: 30px 20px;
@@ -202,14 +258,38 @@
 
     .SearchBar
     {
-        margin: 35px 0 30px;
+        margin: 50px 0 30px;
+        height: 110px;
     }
 
+    .LocationBox
+    {
+        border-radius: 30px 0 0 30px;
+        width: 100px;
+    }
+
+    .LocationBox i
+    {
+        margin: auto;
+        font-size: 2.1rem;
+    }
+
+    .SearchInput
+    {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+    .SearchInput::placeholder
+    {
+        color: black;
+    }
+    
     .SearchButton
     {
         position: relative;
-        width: 50px;
-        border-radius: 15px;
+        width: 100px;
+        border-radius: 30px;
         left: -20px;
     }
 
@@ -218,8 +298,9 @@
         display: none;
     }
 
-    .SearchButton i
+.SearchButton i
     {
+        font-size: 2.1rem;
         display: inline-block;
     }
 
@@ -227,7 +308,45 @@
 
     .Filters
     {
-        margin-bottom: 12px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .Filter
+    {
+        align-items: center;
+        height: 80px;
+        border: 6px solid #f2f2f2;
+        border-left: none;
+        padding-right: 80px;
+        border-radius: 80px;
+    }
+
+    .FilterIcon
+    {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .InfoIcon
+    {
+        height: 60px;
+        width: 60px;
+        border: 1px solid grey;
+        border-radius: 50%;
+    }
+
+    .InfoBox p
+    {
+        font-size: 2rem;
+        align-items: top;
+    }
+
+    .InfoIcon i
+    {
+        font-size: 1.4rem;
     }
 
 /* Hébergements le plus populaires pour mobile */
@@ -235,29 +354,37 @@
     .Populars
     {
         border-radius: 0;
-        padding: 40px 20px 30px;
-        margin-bottom: 40px;
+        padding: 60px 20px 30px;
+        margin-bottom: 60px;
+    }
+
+    .PopularsIcon h2
+    {
+        margin-bottom: 60px;
     }
 
     .PopularPic
     {
-        height: 145px;
-        margin-bottom: 10px;
+        border: 8px solid #fff;
+        border-radius: 40px;
+        height: 300px;
+        margin-bottom: 20px;
     }
 
     .PopularsIcon i
     {
-        font-size: 1.4rem;
+        font-size: 2.4rem;
     }
 
-    .HotelName
+    .HotelName 
     {
-        font-size: 1rem !important;
+        font-size: 2.4rem !important;
     }
 
     .PopularDetails p
     {
-        font-size: .9rem;
+        padding-top: 10px;
+        font-size: 2.1rem;
     }
 
     .PopularDetails
@@ -267,15 +394,19 @@
 
     .fa-star
     {
-        font-size: .8rem !important;
+        font-size: 1.6rem !important;
         letter-spacing: 1px;
     }
 
 /* Hébergements le plus populaires pour mobile  */
 
-    .HotelFrame
+    .HotelPic
     {
-        height: 200px;
+        border: 8px solid #fff;
+        box-shadow: 0px 20px 30px #f2f2f2;
+        border-radius: 40px;
+        height: 600px;
+        margin-bottom: 20px;
     }
 
     .Hotels
@@ -292,31 +423,44 @@
 
     .HotelPic img
     {
-        height: 116px;
+        height: 350px;
     }
 
     .HotelDetails p
     {
-        font-size: .9rem;
+        font-size: 2.1rem;
+    }
+
+    .ShowMore
+    {
+        font-size: 2.1rem;
+        padding-bottom: 80px;
     }
 
 /* Activités pour mobile */
 
     .Activities
     {
-        margin: 55px 20px 45px;
+        margin: 130px 20px 45px;
     }
 
     .ActivitiesTab
     {
         grid-template: repeat(6, 1fr) / 1fr;
         grid-auto-flow: initial;
-        gap: 24px;
+        gap: 30px;
+        height: 3500px;
+    }
+
+    .ActivityPic
+    {   
+        border-radius: 60px;
+        box-shadow: 0px 20px 30px #f2f2f2;
     }
 
     .ActivityPic img
     {   
-        height: 120px !important;
+        height: 450px !important;
     }
 
     .row12, .row5, .row6
@@ -325,10 +469,24 @@
         grid-column-end: span 1;
     }
 
+    .row12
+    {
+        width: 100%;
+    }
+
+    .ActivityName
+    {
+        font-size: 2.1rem;
+        padding: 20px 20px;
+        padding-left: 40px;
+    }
+   
+
 /* Pied de page pour mobile */
 
     footer
     {
+        font-size: 1.25rem;
         flex-direction: column;
         padding: 45px 30px;
     }
