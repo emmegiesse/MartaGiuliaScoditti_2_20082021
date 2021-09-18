@@ -9,7 +9,7 @@
     .HotelsTab
     {
         grid-template: repeat(1, 1fr) / repeat(1, 1fr);
-        margin: 30px 30;
+        margin: 30px 30px;
     }
 
      .ActivitiesTab
