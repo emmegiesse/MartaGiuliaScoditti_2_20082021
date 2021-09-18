@@ -41,6 +41,12 @@
     .Filters
     {
         flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+   .FiltersBar
+    {
+        justify-content: space-between;
     }
 
     .FiltersBarTitle
@@ -51,8 +57,16 @@
 
     .Filter
     {
-        margin: 0 1rem 1rem 0;
+        margin: 0px;
     }
+
+    .FilterIcon
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
 
 /* Hébergements le plus populaires pour tablette */ 
 
@@ -326,6 +340,7 @@
     .Filter
     {
         margin-right: 5px;
+        margin-bottom: 10px;
         align-items: center;
         height: 50px;
         border: 3px solid #f2f2f2;
